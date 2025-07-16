@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="stats-bar">
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-label">ВРЕМЯ</div>
+                    <div class="stat-value" id="timer">00:00</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">УРОВЕНЬ</div>
+                    <div class="stat-value" id="level">1</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">ОЧКИ</div>
+                    <div class="stat-value" id="score">0</div>
+                </div>
+                <div class="stat">
+					<div class="stat-label">БОНУС</div>
+					<div class="bonus-container">
+						<div class="bonus-circles" id="bonusCircles"></div>
+						<span class="bonus-multiplier" id="bonusMultiplier">0x</span>
+					</div>
+				</div>
+            </div>
+        </div>
+        
+        <div class="target-container">
+            <span class="target-text">Найдите указанное число:</span>
+            <span class="target-number" id="target">0</span>
+        </div>
+        
+        <div class="game-board-container">
+            <div class="game-board" id="gameBoard"></div>
+        </div>
+        
+        <div class="message" id="message"></div>
+        <div class="controls">
+            <button id="startBtn" style="display: none;">Начать игру</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
